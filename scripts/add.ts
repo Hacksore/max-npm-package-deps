@@ -2,7 +2,7 @@ import allNames from "all-the-package-names";
 import fs from "node:fs";
 
 const allNameArray: string[] = allNames as string[]; 
-const MAX_DEPENDENCIES = 768;
+const MAX_DEPENDENCIES = 800;
 
 const packageNames = allNameArray.slice(0, MAX_DEPENDENCIES);
 
