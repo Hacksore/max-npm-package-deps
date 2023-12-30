@@ -2,7 +2,7 @@ import allNames from "all-the-package-names";
 import fs from "node:fs";
 
 const allNameArray: string[] = allNames as string[]; 
-const MAX_DEPENDENCIES = 1000;
+const MAX_DEPENDENCIES = 512;
 
 const packageNames = allNameArray.slice(0, MAX_DEPENDENCIES);
 
@@ -10,7 +10,7 @@ console.log("cwd: ", process.cwd());
 // write the packages to the package.json
 const packageJson = JSON.parse(fs.readFileSync("package.json", "utf8"));
 
-packageJson.dependencies = packageJson.dependencies || {};
+packageJson.dependencies = {};
 
 packageNames.forEach((name) => {
   console.log(`Adding ${name} to package.json`);
