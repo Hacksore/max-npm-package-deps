@@ -1,6 +1,6 @@
 {
   "name": "max-npm-package-deps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "stress testing the max number of dependencies in a package.json",
   "author": "Hacksore",
   "license": "MIT",
